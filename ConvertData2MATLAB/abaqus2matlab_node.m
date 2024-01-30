@@ -3,14 +3,14 @@ close all;
 fold_path = 'C:\Study\2_Curve_Boundary\Figure4\flux_That\frames\';
 %% read nodes and elements from txt file
 elements_file = fopen([fold_path,'elements.txt'],'r');
-formatSpec = '%d %d %d %d';
+formatSpec = '%d %d %d %d'; % set the data reading format, int decimal
 sizeA = [4 Inf];
 elements = fscanf(elements_file,formatSpec,sizeA);
 fclose(elements_file);
 elements = elements';
 
 nodes_file = fopen([fold_path,'nodes.txt'],'r');
-formatSpec = '%f %f %f %f';
+formatSpec = '%f %f %f %f'; % set the data reading format, float number
 sizeA = [3 Inf];
 nodes = fscanf(nodes_file,formatSpec,sizeA);
 fclose(nodes_file);
