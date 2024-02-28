@@ -5,11 +5,11 @@ import os
 import numpy as np
 
 
-set_path = r'C:\Study\2_Curve_Boundary\Figure4\flux_That'
+set_path = r'C:\temp\Curve_Cylinder\CurveCheck\2mm\2mm-Case\Coarse-Ori-Bilinear\frames'
 os.chdir(set_path)
 
 folder_path = r'C:\temp\Curve_Cylinder'
-file_name = r'\Job-02mm-CoarseNewInt.odb'
+file_name = r'\Job-02mm-CoraseOri-Bilinear.odb'
 file_path = folder_path + file_name
 my_odb = openOdb(file_path)
 

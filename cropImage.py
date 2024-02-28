@@ -1,7 +1,11 @@
+import os
 from PIL import Image
 
-for i in range(11,42,10):
-    name = "temperature_no_image"+str(i)+".png"
+set_path = r'C:\Study\2_Curve_Boundary\Figure10'
+os.chdir(set_path)
+
+for i in range(10,12,2):
+    name = "FlowerTotal0"+str(i)+"s.png"
     im = Image.open(name)
     im.size  # (364, 471)
     im.getbbox()  # (64, 89, 278, 267)

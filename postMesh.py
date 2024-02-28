@@ -5,17 +5,17 @@ import os
 import numpy as np
 
 
-setPath = r'C:\Study\2_Curve_Boundary\Figure4\flux_That'
+setPath = r'C:\temp\Curve_Cylinder\CurveCheck\2mm\2mm-Case\Coarse-Ori-Bilinear\frames'
 os.chdir(setPath)
 
 folder_path = r'C:\temp\Curve_Cylinder'
-file_name = r'\Job-02mm-CoarseNewInt.odb'
+file_name = r'\Job-02mm-CoraseOri-Bilinear.odb'
 file_path = folder_path + file_name
 my_odb = openOdb(file_path)
 
 # extract nodes and elements
 nodes, elements_tet, elements_hex = [],[],[]
-instance_name =  "PART-2MM-COARSEMESH-1"
+instance_name =  "PART-2MM-COARSEMESH-BILINEAR-1"
 instance = my_odb.rootAssembly.instances[instance_name]
 
 f = open('elements.txt', "w")

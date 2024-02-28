@@ -1,9 +1,9 @@
 clear;
 close all;
 
-for i = 1:40
+% for i = 1:40
 
-    fold_path = 'C:\Study\2_Curve_Boundary\Figure4\flux_That\frames\';
+    fold_path = 'C:\temp\Curve_Cylinder\CurveCheck\2mm\2mm-Case\Coarse-Ori-Bilinear\frames\';
     file_name = [fold_path ,'temperature*.txt'];
     fstruct = dir(file_name);
     total_files = size(fstruct,1);
@@ -20,7 +20,7 @@ for i = 1:40
 
         save([save_path,['/That',int2str(ifiles)]],'That'); 
     end
-end
+% end
 
 
 
